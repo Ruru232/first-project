@@ -24,14 +24,17 @@ export default function Home() {
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry.
       </p>
-      <div className="mt-5 mb-5 pl-3 pr-3 space-y-1 grid grid-cols-1 lg:grid-cols-2 h-[600px] lg:h-[500px] lg:space-y-0 lg:space-x-1">
+      <div className="mt-5 mb-5 pl-3 pr-3 space-y-1 grid grid-cols-1 md:grid-cols-2 md:space-y-0 md:space-x-1 lg:grid-cols-2 lg:space-y-0 lg:space-x-1">
         {contentImages.map((content) => (
-          <div key={content.name} className="relative col-span-1">
+          <div
+            key={content.name}
+            className="relative col-span-1 w-full h-0 pb-[80.25%] overflow-hidden"
+          >
             <Image
               src={content.src}
-              fill
+              layout="fill"
               alt={content.name}
-              className="object-cover mb-2 rounded-xl"
+              className="object-cover rounded-xl"
             />
           </div>
         ))}
