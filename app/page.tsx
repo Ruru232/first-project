@@ -12,15 +12,19 @@ export default function Home() {
     <main className="min-w-screen max-w-[1024px] mx-auto">
       <Header />
       <Separator />
-      <h1 className="font-bold text-2xl mt-10 ml-3">Golden Wedding</h1>
-      <h2 className="font-bold mt-5 ml-3">Company Background</h2>
-      <p className="mt-5 ml-3">
+      <h1 className="font-bold text-xl md:text-2xl mt-10 ml-3">
+        Golden Wedding
+      </h1>
+      <h2 className="font-bold text-base md:text-xl mt-5 ml-3">
+        Company Background
+      </h2>
+      <p className="mt-5 ml-3 text-sm md:text-base">
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
         since the 1500s
       </p>
-      <h2 className="font-bold mt-5 ml-3">Our Services</h2>
-      <p className="mt-5 ml-3">
+      <h2 className="font-bold text-base md:text-xl mt-5 ml-3">Our Services</h2>
+      <p className="mt-5 ml-3 text-sm md:text-base">
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry.
       </p>
